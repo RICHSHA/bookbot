@@ -9,10 +9,10 @@ def parse_book_text(text):
 def count_symbols(text):
     symbols = {}
     for c in text:
-        c = c.lower()
-        if c not in symbols:
-            symbols[c] = 0
-        symbols[c] += 1
+        lwr = c.lower()
+        if lwr not in symbols:
+            symbols[lwr] = 0
+        symbols[lwr] += 1
     return symbols
 
 def sort_symbols(symbols):
